@@ -11,7 +11,7 @@
  */
 
 import { config } from "dotenv";
-config({ path: ".env.local" });
+config({ path: ".env" });
 
 import { scrapeLatestInfoPage } from "../src/lib/scraper";
 import { ingestDocument } from "../src/lib/ingest";
