@@ -1,11 +1,10 @@
 name: Daily Check for New Care Insurance Info
 
 on:
-  schedule:
-    # Run at 9:00 AM JST (0:00 UTC) every day
-    - cron: "0 0 * * *"
+#  schedule:
+#    - cron: "0 0 * * *" # Runs at 00:00
   workflow_dispatch: # Allow manual trigger
-
+  
 jobs:
   check-new-info:
     runs-on: ubuntu-latest
