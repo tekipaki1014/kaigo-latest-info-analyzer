@@ -9,7 +9,7 @@ export interface ScrapedItem {
 
 const BASE_URL = "https://www.mhlw.go.jp";
 const INDEX_URL = `${BASE_URL}/stf/seisakunitsuite/bunya/hukushi_kaigo/kaigo_koureisha/index_00010.html`;
-const MIN_VOL = 1121;
+const MIN_VOL = 1;
 
 export async function scrapeLatestInfoPage(): Promise<ScrapedItem[]> {
   const response = await fetch(INDEX_URL, {
